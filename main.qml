@@ -21,6 +21,11 @@ Window {
             height: 100
             radius: 5
             color: "green"
+            Text {
+                id: move
+                anchors.centerIn: parent
+                text: qsTr("MOVE")
+            }
             MouseArea {
                 anchors.fill: parent
                 onClicked: {
@@ -41,6 +46,11 @@ Window {
             height: 100
             radius: 5
             color: "green"
+            Text {
+                id: back
+                anchors.centerIn: parent
+                text: qsTr("BACK")
+            }
             MouseArea {
                 anchors.fill: parent
                 onClicked: {
@@ -56,7 +66,9 @@ Window {
             width: leftRectagle.width - 10
             height: leftRectagle.height - 10
             radius: leftRectagle.width / 2
-            color: "red"
+            color: "transparent"
+            border.color: "red"
+            border.width: 5
         }
 
         states: [
